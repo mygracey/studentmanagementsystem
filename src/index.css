@@ -426,8 +426,85 @@
   color:white;
 }
 
+.editpage .btn-logout{
+  padding:0.6rem 2rem;
+  background:orange;
+  color:var(--primary-color);
+  border:0;
+  cursor: pointer;
+  margin-bottom:1rem;
+  font-weight: bold;
+}
+
 
 /*End of Edit Styling*/
+
+.errorpage{
+  width:100vw;
+  height:calc(100vh - 8rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.errorpage h2{
+  font-size:2.5rem;
+}
+
+.errorpage .btn-return{
+  padding:0.6rem 2rem;
+  background:orange;
+  border-radius: 4px;
+  text-decoration: none;
+  color:black;
+}
+
+/* End of ErrorPage Styling*/
+
+
+.logoutpage{
+  width:100vw;
+  height:calc(100vh - 8rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logoutpage h2{
+  font-size:2.5rem;
+  font-weight: normal;
+}
+
+.button-group{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.button-group .btn-login-again{
+  padding:0.6rem 2rem;
+  background:transparent;
+  border-bottom:2px solid var(--primary-color);
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-group .btn-return-home{
+  padding:0.6rem 2rem;
+  background:orange;
+  color:var(--primary-color);
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* End of Logout Styling*/
 
 .footer{
   width:100vw;
@@ -550,6 +627,28 @@
   .editpage form{
     width:20rem;
   }
+
+  .errorpage{
+    max-width:800px;
+  }
+  .errorpage h2{
+    font-size:1.5rem;
+    text-align:center;
+    line-height: 1.2;
+    margin-bottom:1rem;
+  }
+  .logoutpage{
+    max-width:800px;
+  }
+  .logoutpage h2{
+    font-size:1.5rem;
+    text-align: center;
+  }
+
+  .logoutpage .button-group{
+    flex-direction: column;
+  }
+
   .footer{
     text-align:center;
   }

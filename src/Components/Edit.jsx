@@ -41,8 +41,13 @@ function editRecord(e){
 
 }
 
+function handleLogout(){
+    navigate("/logout")
+}
+
     return(
         <section className="editpage">
+            <button className="btn-logout" onClick={handleLogout}>Logout</button>
             <h2>Edit Student Data</h2>
              <form>
                 <h4>{message}</h4>

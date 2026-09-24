@@ -1,4 +1,4 @@
-
+import Logout from "./Components/Logout"
 import Edit from "./Components/Edit";
 import AddStudents from "./Components/AddStudents";
 import Register from "./Components/Register";
@@ -22,6 +22,7 @@ function App(){
           <Route path="/register" element={<Register/>}/>
           <Route path="/addstudents" element={<AddStudents/>}/>
           <Route path="/edit/:id" element={<Edit/>}/>
+          <Route path="/logout" element={<Logout/>}/>
 
 
           <Route path="*" element={<ErrorPage/>}/> 
