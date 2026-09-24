@@ -2,10 +2,13 @@ import {useState,useEffect} from "react";
 import {database} from "../FirebaseConfig.jsx";
 import {push,ref,onValue,remove} from "firebase/database";
 import {FaEdit,FaTrash} from "react-icons/fa";
-import {useParams,Link} from "react-router-dom"
+import {useParams,Link,useNavigate} from "react-router-dom";
+
 
 
 function AddStudents(){
+
+const navigate=useNavigate()
 const[name,setName]=useState("")
 const[age,setAge]=useState("")
 const[email,setEmail]=useState("")
@@ -25,10 +28,9 @@ function createRecord(e){
         const studentRef=ref(database,"students")
         push(studentRef,{name:name,age:age,email:email})
        
-        setMessage(name + "s data has been added to the database.")
-        setTimeout(()=>{
-            window.location.reload()
-        },50)
+        setMessage(`${name}'s data has been added to the database`)
+               
+        
     }
 
 }
